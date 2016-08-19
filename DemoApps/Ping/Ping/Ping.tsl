@@ -1,0 +1,45 @@
+struct MyMessage
+{
+    int sn;
+	List<int> myList;
+}
+
+struct MyResponse
+{
+    string text;
+}
+
+cell struct MyCell
+{
+    string a;
+}
+
+protocol SynPing
+{
+    Type: Syn;
+    Request: MyMessage;
+    Response: void;
+}
+
+protocol SynEchoPing
+{
+    Type: Syn;
+    Request: MyMessage;
+    Response: MyMessage;
+}
+
+protocol AsynPing
+{
+    Type: Asyn;
+    Request: MyMessage;
+    Response: void;
+}
+
+server MyServer
+{
+    protocol SynPing;
+    protocol SynEchoPing;
+    protocol AsynPing;
+}
+
+

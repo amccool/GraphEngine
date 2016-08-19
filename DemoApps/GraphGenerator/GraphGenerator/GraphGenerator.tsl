@@ -1,0 +1,11 @@
+TrinitySettings
+{
+	RootNamespace: Trinity.Extension.GraphGenerator;
+}
+
+cell struct GraphNode
+{
+	int EdgeCount;
+	string Label;
+	List<CellId> Edges;
+}
