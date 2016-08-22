@@ -1,2 +1,3 @@
 # GraphEngine
-Graph Engine related source code.
+
+Microsoft [Graph Engine](http://www.graphengine.io/) related source code.
